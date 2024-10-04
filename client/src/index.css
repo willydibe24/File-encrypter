@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --black: #111111;
+    --blue: #2F52E0;
+    --green: #00C2D1;
+    --yellow: #FCFC62;
+    --white: #E6FAFC;
+    --hover-grey:  #181818;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--white);
+    background: var(--blue);
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 480px) {
+    .Toastify__toast-container {
+        width: 80%;
+        left: unset;
+    }
+
+    .Toastify__toast {
+        /* CSS me li overrideava con 0 */
+        margin-bottom: 1rem !important;
+        border-radius: var(--toastify-toast-bd-radius) !important;
+    }
+}
